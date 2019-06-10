@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alley Cats Bowling Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <style>
+    table { border-collapse:collapse; } 
+    table, td { border-width:1px; border-style:solid }
+    td { text-align:center; width:22px; }
+
+  </style>
+
+</head>
+<body>
+        <button type="button" class="btn btn-outline-primary">High Scores</button>
+        <button type="button" class="btn btn-outline-primary" input type="reset" value="Reset">Reset</button>
+        <br>
+        <br>
+
+
+
+        <table align="center">
+                    <tr><td colspan=66>Alley Cats!</td></tr>
+
+                    <!-- <tr><td colspan=66></td></tr> -->
+                    <tr><td colspan=6></td>
+                        <td colspan=6>Frame #1</td>
+                        <td colspan=6>Frame #2</td>
+                        <td colspan=6>Frame #3</td>
+                        <td colspan=6>Frame #4</td>
+                        <td colspan=6>Frame #5</td>
+                        <td colspan=6>Frame #6</td>
+                        <td colspan=6>Frame #7</td>
+                        <td colspan=6>Frame #8</td>
+                        <td colspan=6>Frame #9</td>
+                        <td colspan=6>Frame #10</td>
+
+                    
+                    
+                    
+                    
+                    
+                    </tr>
+
+
+                  <tr>
+                        <td colspan=6><img src="data:image/jpeg;base64,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" alt="Italian Trulli" style="width:30px;height:30px;"></td>
+                        <td colspan=3>0</td><td colspan=3 <input type="text" id="dice1" disabled></input></td>
+                        <td colspan=3>0</td><td colspan=3 <input type="text" id="dice2" disabled></input></td>
+                        <td colspan=3>0</td><td colspan=3></td>
+                        <td colspan=3>0</td><td colspan=3></td>
+                        <td colspan=3>0</td><td colspan=3></td>
+                        <td colspan=3>0</td><td colspan=3></td>
+                        <td colspan=3>0</td><td colspan=3></td>
+                        <td colspan=3>0</td><td colspan=3></td>
+                        <td colspan=3>0</td><td colspan=3></td>
+                        <td colspan=3>0</td><td colspan=3></td>
+
+                        <tr><td colspan=6>Name</td>
+                            <td colspan=6 <input type="text" id="total1" disabled></input> </td>
+                            <td colspan=6 <input type="text" id="total2" disabled></input> </td>
+                            <td colspan=6 <input type="text" id="total3" disabled></input> </td>
+                            <td colspan=6 <input type="text" id="total4" disabled></input> </td>
+                            <td colspan=6 <input type="text" id="total5" disabled></input> </td>
+                            <td colspan=6 <input type="text" id="total6" disabled></input> </td>
+                            <td colspan=6 <input type="text" id="total7" disabled></input> </td>
+                            <td colspan=6 <input type="text" id="total8" disabled></input> </td>
+                            <td colspan=6 <input type="text" id="total9" disabled></input> </td>
+                            <td colspan=6 <input type="text" id="total10" disabled></input></td>
+                  </tr>
+
+        </table>
+
+       <button onclick="myFunction()">Go Bowling</button>
+
+        <script>
+        function myFunction() {
+        var number = (Math.random());
+        var score = Math.floor(number * 10 + 1);
+        let total = "total" + 1;
+        let dice = "dice" + 1;
+        document.getElementById(dice).textContent = score;
+        document.getElementById(total).textContent = score;
+        } -->
+
+         // add what frame I'm on.  getElementById, setElementById
+
+// let frame = "total" + 1;
+
+    //     function myFunction2() {
+    //     var number = (Math.random());
+    //     var dice = Math.floor(number * 10 + 1);
+    //     alert(dice);  
+    //     let nextCell = "dice" + i;
+    //     document.getElementById("nextCell").textContent = dice;
+    //     let dice2 = document.getElementById("total1").textContent;
+    //     document.getElementById("total2").textContent = dice + dice2;
+    //     }}
+        
+    //     </script> 
+      -->
+          
+<!-- <script>
+for (i = 1; i < 10; i++) { 
+    
+function myFunction();
+var number = (Math.random());
+var dice = Math.floor(number * 10 + 1);
+document.getElementById("dice"+i).textContent = dice;
+}
+</script> -->
+
+
+              
+</body>
+</html>
