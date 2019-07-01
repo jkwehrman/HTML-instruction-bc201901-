@@ -1,0 +1,54 @@
+﻿body { 
+    <article>
+    font-size:18px;
+    color:blue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    </article>
+}
+h1 { 
+    font-family:comic sans ms;  
+}
+h2 {
+    font-family:comic sans ms; 
+    text-shadow: 4px gray;
+}
+
+header {
+    font-size:48px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align:center;
+    border:1px solid;
+    background-color:rgb((255, 98, 0));
+    padding:40px;
+}
+
+nav a:hover {
+    background-color:lightgray;
+}
+
+nav a {
+    text-decoration:none;
+    border:1px solid;
+    border-radius:5px 5px 0 0;
+    margin-right:-5px;
+    padding:5px;
+}
+
+xnav a.hover {
+    text-decoration:underline;
+}
+
+
+nav {
+    border-bottom:1px solid;
+    margin-top:10px;
+    padding-bottom:5px;
+}
+
+footer {    
+    text-align:right;
+}
+
+div{
+    color:red; background-color: aquamarine; border-color: paleturquoise;
+}

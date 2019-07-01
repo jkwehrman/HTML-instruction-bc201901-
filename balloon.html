@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Balloon</title>
+</head>
+<body>
+
+
+
+<p align="center" >🎈</p>
+<script>
+window.addEventListener("keydown", event => {
+    if (event.key == "arrowUp")
+console.log("arrowUp clicked");
+paragraph.style.size = "10em";
+});
+
+window.addEventListener("keydown", event => {
+  if (event.key == "arrowDown")
+    console.log("arrowDown clicked");
+    paragraph.style.fontSize = "2em";
+
+    });
+
+function ballonPop() {
+  
+
+}
+
+function letsBowl() {
+    let frameArray = [];
+    let totalScore = 0;
+    for (let i=0;; i<10; i++) {
+    let s = Math.floor(Math.random * 11);
+    frameArray.push(s);
+    totalScore+=s;
+
+    }
+
+</script>
+
+<!-- You’ll want to register a handler for the "keydown" event and look at event.key to figure out whether the up or down arrow key was pressed.
+
+The current size can be kept in a binding so that you can base the new size on it. It’ll be helpful to define a function that updates the size—both the binding and the style of the balloon in the DOM—so that you can call it from your event handler, and possibly also once when starting, to set the initial size.
+
+You can change the balloon to an explosion by replacing the text node with another one (using replaceChild) or by setting the textContent property of its parent node to a new string. -->
+
+</body>
+</html>

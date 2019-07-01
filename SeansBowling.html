@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bowling</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <style>
+    table { border-collapse:collapse; } 
+    table, td { border-width:1px; border-style:solid }
+    td { text-align:center; width:22px; }
+
+  </style>
+
+</head>
+<body>
+
+<h1>Let's Bowl!</h1>
+<input type="submit" value="Bowl" onclick="letsBowl()">
+<h2>Frames</h2>
+<p id="frames">Frame scores go here...</p>
+<label>Total:  </label><input type="text" id="totalBox">
+<script>
+    function letsBowl() {
+    let frameArray = [];
+    let totalScore = 0;
+    for (let i=0;; i<10; i++) {
+    let s = Math.floor(Math.random * 11);
+    frameArray.push(s);
+    totalScore+=s;
+
+    }
+    console.log(frameArray);
+    let framesDiv = document.getElementById("frames");
+    framesDiv.textContent=frameArray;
+    document.getElementById("totalBox").value=totalScore;
+    }
+</script>
+            
+</body>
+</html>

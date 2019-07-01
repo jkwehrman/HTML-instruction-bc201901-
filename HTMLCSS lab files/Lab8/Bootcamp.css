@@ -1,0 +1,71 @@
+div { 
+    font-size:18px;
+    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    background-attachment: fixed;
+    font-family:"Comic Sans MS", cursive;
+    color: #FF214A !important; 
+    background:linear-gradient(white, black); 
+}  
+
+h2 {
+    border-bottom-color:black;
+    border-bottom-style:solid;
+    border-width:2px;
+}
+
+
+h2[style*="italic"] {
+    font-style:normal !important;
+}
+
+
+header {
+    color:yellowgreen;
+    text-shadow: 2px 2px 2px black;
+    font-size:48px;
+    text-align:center;
+    border:5px solid;
+    border-color:black;
+    background-color:#CC399E;
+    padding:40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+nav a:hover {
+    background-color:l#D1FFE6;
+}
+
+nav a {
+    text-decoration:none;
+    border:1px solid;
+    border-radius:5px 5px 0 0;
+    margin-right:-5px;
+    padding:5px;
+    color:#D1FFE6;
+    background-color:black;
+    
+    
+}
+h1 {
+    background-color:#CC399E;
+    font-size:148px;
+    text-align: center;
+    color: hotpink;
+    text-shadow: 2px 2px black;
+    
+
+
+}
+
+nav {
+    border-bottom:1px solid;
+    margin-top:10px;
+    padding-bottom:5px;
+    background-image:url(C:\HTML-instruction-bc201901\HTMLCSS_lab_files\Lab8\star.jng);
+    
+}
+
+aside {
+    background: linear-gradient(white 50px,  #FF214A); 
+}
+

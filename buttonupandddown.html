@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TextBox Up and Down</title>
+</head>
+
+<body>
+<button id="minus" onclick="changeNbr(-1)">-</button>
+<input id="theNbr" type="text" value="0" size="5">
+<button id="plus" onclick="changeNbr(1)">+</button>
+
+<script>
+let nbr = 0;
+function changeNbr(changeVal) {
+nbr = nbr + Number(changeVal);
+console.log("nbr +  " + nbr);
+let nbrCtrl = document.getElementById("theNbr");
+nbrCtrl.value = nbr;
+let evenOdd = nbr % 2;
+nbrCtrl.style.color = "black";
+nbrCtrl.style.fontStyle = "normal";
+nbrCtrl.style.size = "2em";
+
+
+if (evenOdd == 0) {
+    //even
+    nbrCtrl.syle.color = "red";
+}
+if (nbr % 3 == 0)
+    nbrCtrl.style.fontstyle = "italic";
+}
+if (nbr % 7 == 0) {
+    nbrCtrl.style.color = "4em";
+}
+
+</script>
+
+
+<!-- <button onclick="addOne()">+</button>
+<table>
+        <tr>
+            <td>   <input type="text" name="Incrementor"></td>
+        </tr>
+        </table>
+  
+        <button onclick="subtractOne()">-</button>
+<script>
+        function addOne() {
+        let number = number + 1;
+        document.getElementByName(Incrementor).textContent = number;
+        
+        
+        }
+        function subtractOne() {
+            number = number - 1;
+            document.getElementByName(Incrementor).textContent = number;
+        }
+
+
+</script> -->
+</body>
+</html>
